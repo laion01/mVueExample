@@ -167,6 +167,9 @@ export default {
 
             return {
               tags: [
+
+
+
                 ...previousResult.tags,
                 // Add the new tag
                 subscriptionData.data.tagAdded,
@@ -176,6 +179,7 @@ export default {
         }],
       }
     },
+
 
     // Random tag
     randomTag: {
@@ -187,6 +191,7 @@ export default {
               label
               type
             }
+
           }`
         } else if (this.showTag === 'last') {
           return gql`{
@@ -200,6 +205,7 @@ export default {
       },
       // update: data => data.randomTag || data.lastTag,
     },
+
 
     // Pages
     tagsPage: {
